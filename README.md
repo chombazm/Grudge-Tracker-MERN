@@ -10,11 +10,10 @@ The application has few main features:
 
 1. Create a grudge
 2. View a grudge
-3. Edit a grudge
+3. Edit a grudge - forgive
 4. Delete a grudge
 5. Delete all grudges
 6. View grudges
-7. Filter grudges by the current date and alphabet.÷÷
 
 
 
