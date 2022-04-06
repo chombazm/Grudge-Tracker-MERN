@@ -26,12 +26,18 @@ This applications consists of two parts:
 
 ## How to run
 
-To start the application use docker compose:
+To start the application
 
-`docker-compose up --build`
+once you clone the app cd into the both apps:
 
-once the app is running you can open:
-
+1. Backend
+```console
+yarn start
+```
+2. Frontend
+```console
+yarn dev
+```
 http://localhost:3000
 
 on your browser.
