@@ -9,7 +9,7 @@ function AddGrudge() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="flex justify-center center flex-col mt-60"
+      className="flex justify-center center flex-col mt-40"
     >
       <div className="flex justify-center center border-b p-3 mb-6 border-[#98A3B2] bg-[#FBFAFC]">
         <input

@@ -13,6 +13,14 @@
   },
   "plugins": ["react"],
   "rules": {
-    "comma-dangle": [2, "only-multiline"]
+    "comma-dangle": [2, "only-multiline"],
+    "no-console": "off",
+    "no-restricted-syntax": [
+      "error",
+      {
+        "selector": "CallExpression[callee.object.name='console'][callee.property.name!=/^(log|warn|error|info|trace)$/]",
+        "message": "Unexpected property on console object was called"
+      }
+    ]
   }
 }
