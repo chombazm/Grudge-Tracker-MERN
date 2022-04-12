@@ -4,7 +4,7 @@ import GrudgesContainer from './components/GrudgesContainer';
 
 function App() {
   return (
-    <div className="w-full max-w-screen-md mx-auto">
+    <div className="w-full max-w-screen-md mx-auto p-4">
       <AddGrudge />
 
       <GrudgesContainer />

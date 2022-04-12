@@ -1,5 +1,6 @@
 import React from 'react';
 import Grudge from '../Grudge';
+import NoGrudges from './NoGrudges';
 
 function GrudgesContainer() {
   const grudges = [
@@ -17,8 +18,44 @@ function GrudgesContainer() {
       offense:
         'He used my hotspot without my concern and depleted my baundles.He ',
     },
+    {
+      id: 32342,
+      name: 'Bryan',
+      forgiven: true,
+      offense:
+        'He used my hotspot without my concern and depleted my baundles.He ',
+    },
+    {
+      id: 2212,
+      name: 'Bryan',
+      forgiven: true,
+      offense:
+        'He used my hotspot without my concern and depleted my baundles.He ',
+    },
+    {
+      id: 233,
+      name: 'Bryan',
+      forgiven: true,
+      offense:
+        'He used my hotspot without my concern and depleted my baundles.He ',
+    },
+    {
+      id: 222,
+      name: 'Bryan',
+      forgiven: true,
+      offense:
+        'He used my hotspot without my concern and depleted my baundles.He ',
+    },
+    {
+      id: 22,
+      name: 'Bryan',
+      forgiven: true,
+      offense:
+        'He used my hotspot without my concern and depleted my baundles.He ',
+    },
   ];
 
+  // const grudges = [];
   const isActiveTab = true;
 
   const handleDelete = (id) => {
@@ -28,6 +65,9 @@ function GrudgesContainer() {
   const handleToggle = (id) => {
     console.log(`Toggling grudge with id: ${id}`);
   };
+  if (grudges.length === 0) {
+    return <NoGrudges />;
+  }
   return (
     <div className="w-full max-w-[420px] mx-auto mt-8 flex justify-center flex-col">
       <ul className="flex justify-center mb-4 place-items-center">

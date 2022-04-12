@@ -11,20 +11,21 @@ function AddGrudge() {
       onSubmit={handleSubmit}
       className="flex justify-center center flex-col mt-40"
     >
-      <div className="flex justify-center center border-b p-3 mb-6 border-[#98A3B2] bg-[#FBFAFC]">
-        <input
-          type="text"
-          value={offense}
-          placeholder="what happened?"
-          onChange={(e) => setOffense(e.target.value)}
-          className="flex-auto w-64 outline-none text-lg bg-transparent"
-        />
+      <div className="flex justify-center flex-col center border-b p-3 mb-6 bg-[#FBFAFC]">
         <input
           type="text"
           value={name}
-          placeholder="who did it?"
+          placeholder="Who did it?"
           onChange={(e) => setName(e.target.value)}
-          className="flex-auto w-32 outline-none text-lg bg-transparent"
+          className=" outline-none text-lg bg-transparent  border-b"
+        />
+        <textarea
+          rows="3"
+          type="text"
+          value={offense}
+          placeholder="What happened?"
+          onChange={(e) => setOffense(e.target.value)}
+          className=" outline-none text-lg bg-transparent"
         />
       </div>
 

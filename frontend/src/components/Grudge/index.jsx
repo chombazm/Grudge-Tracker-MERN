@@ -8,9 +8,9 @@ function Grudge({ grudge, toggleGrudge }) {
       aria-hidden="true"
     >
       <div
-        className={`flex-none w-[74px] border-8 flex justify-center content-center ${
+        className={`flex-none w-[64px] border-4 flex justify-center content-center ${
           grudge.forgiven ? 'border-[#61AF65]' : 'border-[#FF8665]'
-        } bg-white rounded-full h-[74px]`}
+        } bg-white rounded-full h-[64px]`}
       >
         <span className="text-[#FCF4E4] text-[2.3rem] font-bold">
           {grudge.name[0]}
@@ -19,7 +19,9 @@ function Grudge({ grudge, toggleGrudge }) {
       <div className="flex-auto px-2">
         <div className="">
           <h2 className="text-sm font-bold">{grudge.name}</h2>
-          <p className="text-xs text-[#98A3B2]">{grudge.offense}</p>
+          <p className="text-xs text-[#98A3B2] truncate w-[100%]">
+            {grudge.offense}
+          </p>
           <div className="flex justify-between">
             <div className="flex place-items-center">
               <span
@@ -44,7 +46,9 @@ function Grudge({ grudge, toggleGrudge }) {
           onClick={() => toggleGrudge(grudge.id)}
           type="button"
         >
-          <svg
+          {' '}
+          🙏🏿
+          {/* <svg
             className="w-full h-full"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -55,7 +59,7 @@ function Grudge({ grudge, toggleGrudge }) {
             strokeLinejoin="round"
           >
             <polyline points="20 6 9 17 4 12" />
-          </svg>
+          </svg> */}
         </button>
       </div>
     </div>
